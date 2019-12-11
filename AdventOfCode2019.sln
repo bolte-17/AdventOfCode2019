@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "1_The_Tyranny_of_the_Rocket_Equation", "1_The_Tyranny_of_the_Rocket_Equation\1_The_Tyranny_of_the_Rocket_Equation.fsproj", "{F323C910-E6E4-4AF7-9093-419770A041C0}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "2_1202_Program_Alarm", "2_1202_Program_Alarm\2_1202_Program_Alarm.fsproj", "{4EE35138-03D1-4AE0-AB78-567EED4ED499}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,17 @@ Global
 		{F323C910-E6E4-4AF7-9093-419770A041C0}.Release|x64.Build.0 = Release|Any CPU
 		{F323C910-E6E4-4AF7-9093-419770A041C0}.Release|x86.ActiveCfg = Release|Any CPU
 		{F323C910-E6E4-4AF7-9093-419770A041C0}.Release|x86.Build.0 = Release|Any CPU
+		{4EE35138-03D1-4AE0-AB78-567EED4ED499}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EE35138-03D1-4AE0-AB78-567EED4ED499}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EE35138-03D1-4AE0-AB78-567EED4ED499}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4EE35138-03D1-4AE0-AB78-567EED4ED499}.Debug|x64.Build.0 = Debug|Any CPU
+		{4EE35138-03D1-4AE0-AB78-567EED4ED499}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4EE35138-03D1-4AE0-AB78-567EED4ED499}.Debug|x86.Build.0 = Debug|Any CPU
+		{4EE35138-03D1-4AE0-AB78-567EED4ED499}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EE35138-03D1-4AE0-AB78-567EED4ED499}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EE35138-03D1-4AE0-AB78-567EED4ED499}.Release|x64.ActiveCfg = Release|Any CPU
+		{4EE35138-03D1-4AE0-AB78-567EED4ED499}.Release|x64.Build.0 = Release|Any CPU
+		{4EE35138-03D1-4AE0-AB78-567EED4ED499}.Release|x86.ActiveCfg = Release|Any CPU
+		{4EE35138-03D1-4AE0-AB78-567EED4ED499}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
