@@ -1,47 +1,46 @@
-module Tests
+module Day2.Tests
 
 open System
 open Xunit
- 
-type RunningProgram = { head: int; program: int array } with
-  member this.Next newState = { head = this.head + 4; program = newState }
-  member this.Args = this.program |> Seq.skip this.head |> Seq.truncate 4 |> Seq.toList
 
-type ProgramState = 
-  | Halt of int array
-  | Run of RunningProgram
-  | Error of string
+let (|Op3|_|) = function
+  | 1 -> Some (+)
+  | 2 -> Some (*)
+  | _ -> None
 
-let parseProgram (programStr: string) = 
-  programStr.Split(',') 
-  |> Seq.map int
-  |> Seq.toArray
+let (|HaltOp|_|) inst = match Array.head inst with 99 -> Some () | _ -> None 
 
-let args (head: int, program: int array) = program 
+let (|Src|) i (program: int array) = program.[i]; 
+let (|Dest|) i program value = 
+  Array.set program i value
+  program
 
-let step state = 
-  match state with
-  | Run running -> 
-    match running.Args with
-    | 99 :: _ -> Halt running.program
-    | op :: in1 :: in2 :: out -> 
-      match op with 
-      | 1 -> Some (+)
-      | 2 -> Some (*)
-      | _ -> None
-      |> Option.fold (fun f -> f) running.program
-      |> running.Next
-      |> Run
-    | _ -> Error "Unrecognized opcode"
-  | _ -> Error ""
+type OpResult = 
+  | Step of (int array -> int array)
+  | RaiseError of string
+  | Halt
 
-let exec (program: int array): 
+let parseInst = function
+  | [| Op3 op; Src src1; Src src2; Dest dest |] -> 
+    Step (fun program -> 
+      dest program <| op (src1 program) (src2 program)
+    )
+  | HaltOp -> Halt
+  | _ -> RaiseError "Unrecognized Operation"
 
-  
+let rec exec (program: int array) instPtr = 
+  program.[instPtr..instPtr + 3 |> min <| program.Length - 1] 
+  |> parseInst
+  |> function
+  | Step f -> exec (f program) (instPtr + 4) 
+  | Halt -> Ok program
+  | RaiseError err -> Error err
+
+let execute program = exec (Seq.toArray program) 0
+
+let parseProgram (str: string) = str.Split ',' |> Array.map int
 
 [<Theory>]
 [<InlineData("99", "99")>]
-let ``My test`` (input: string, expected: string) =
-  let program: ProgramState = { program = (parseProgram input); head = 0; }
-  let expectedResult = parseProgram expected
-  Assert.Equal<Collections.Generic.IEnumerable<int>>((execOne program).program, expectedResult)
+let ``Halts on 99`` (input: string, expected: string) =
+  Assert.Equal(Ok (parseProgram expected), parseProgram input |> execute)
