@@ -1,4 +1,4 @@
-﻿module Program
+﻿module Day1.Program
 
 open System.IO
 open Tests

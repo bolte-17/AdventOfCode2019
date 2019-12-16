@@ -3,6 +3,7 @@
     <RootNamespace>_1_The_Tyranny_of_the_Rocket_Equation</RootNamespace>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.0</TargetFramework>
+    <GenerateProgramFile>false</GenerateProgramFile>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Tests.fs" />
