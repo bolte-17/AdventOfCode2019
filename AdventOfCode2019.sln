@@ -7,6 +7,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "1_The_Tyranny_of_the_Rocket
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "2_1202_Program_Alarm", "2_1202_Program_Alarm\2_1202_Program_Alarm.fsproj", "{4EE35138-03D1-4AE0-AB78-567EED4ED499}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "3_Crossed_Wires", "3_Crossed_Wires\3_Crossed_Wires.fsproj", "{F0D1D9F6-EDB4-447C-828A-9B74A0C0FB00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,17 @@ Global
 		{4EE35138-03D1-4AE0-AB78-567EED4ED499}.Release|x64.Build.0 = Release|Any CPU
 		{4EE35138-03D1-4AE0-AB78-567EED4ED499}.Release|x86.ActiveCfg = Release|Any CPU
 		{4EE35138-03D1-4AE0-AB78-567EED4ED499}.Release|x86.Build.0 = Release|Any CPU
+		{F0D1D9F6-EDB4-447C-828A-9B74A0C0FB00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0D1D9F6-EDB4-447C-828A-9B74A0C0FB00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0D1D9F6-EDB4-447C-828A-9B74A0C0FB00}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F0D1D9F6-EDB4-447C-828A-9B74A0C0FB00}.Debug|x64.Build.0 = Debug|Any CPU
+		{F0D1D9F6-EDB4-447C-828A-9B74A0C0FB00}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F0D1D9F6-EDB4-447C-828A-9B74A0C0FB00}.Debug|x86.Build.0 = Debug|Any CPU
+		{F0D1D9F6-EDB4-447C-828A-9B74A0C0FB00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0D1D9F6-EDB4-447C-828A-9B74A0C0FB00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0D1D9F6-EDB4-447C-828A-9B74A0C0FB00}.Release|x64.ActiveCfg = Release|Any CPU
+		{F0D1D9F6-EDB4-447C-828A-9B74A0C0FB00}.Release|x64.Build.0 = Release|Any CPU
+		{F0D1D9F6-EDB4-447C-828A-9B74A0C0FB00}.Release|x86.ActiveCfg = Release|Any CPU
+		{F0D1D9F6-EDB4-447C-828A-9B74A0C0FB00}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
