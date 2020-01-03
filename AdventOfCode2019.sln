@@ -11,6 +11,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "3_Crossed_Wires", "3_Crosse
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "6_Universal_Orbit_Map", "6_Universal_Orbit_Map\6_Universal_Orbit_Map.fsproj", "{32EF61EF-DE2D-42D8-AC35-38009AB5EEAD}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "4_Secure_Container", "4_Secure_Container\4_Secure_Container.fsproj", "{D36D4EB6-D0EB-458C-A207-488432DC082A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,5 +74,17 @@ Global
 		{32EF61EF-DE2D-42D8-AC35-38009AB5EEAD}.Release|x64.Build.0 = Release|Any CPU
 		{32EF61EF-DE2D-42D8-AC35-38009AB5EEAD}.Release|x86.ActiveCfg = Release|Any CPU
 		{32EF61EF-DE2D-42D8-AC35-38009AB5EEAD}.Release|x86.Build.0 = Release|Any CPU
+		{D36D4EB6-D0EB-458C-A207-488432DC082A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D36D4EB6-D0EB-458C-A207-488432DC082A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D36D4EB6-D0EB-458C-A207-488432DC082A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D36D4EB6-D0EB-458C-A207-488432DC082A}.Debug|x64.Build.0 = Debug|Any CPU
+		{D36D4EB6-D0EB-458C-A207-488432DC082A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D36D4EB6-D0EB-458C-A207-488432DC082A}.Debug|x86.Build.0 = Debug|Any CPU
+		{D36D4EB6-D0EB-458C-A207-488432DC082A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D36D4EB6-D0EB-458C-A207-488432DC082A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D36D4EB6-D0EB-458C-A207-488432DC082A}.Release|x64.ActiveCfg = Release|Any CPU
+		{D36D4EB6-D0EB-458C-A207-488432DC082A}.Release|x64.Build.0 = Release|Any CPU
+		{D36D4EB6-D0EB-458C-A207-488432DC082A}.Release|x86.ActiveCfg = Release|Any CPU
+		{D36D4EB6-D0EB-458C-A207-488432DC082A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
